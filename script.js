@@ -1,19 +1,18 @@
-let theme = localStorage.getItem('theme')
+let theme = localStorage.getItem('theme');
 
 if(theme == null){
-  setTheme('light')
+  setTheme('light');
 } else {
-  setTheme(theme)
+  setTheme(theme);
 }
 var bgc = '#fff';
 let themeDots = document.getElementsByClassName('theme-dot')
 
 for (var i = 0; themeDots.length > i; i++){
   themeDots[i].addEventListener('click', function(){
-    let mode = this.dataset.mode
-    console.log('option clicked: ', mode)
-    setTheme(mode)
-  })
+    let mode = this.dataset.mode;
+    setTheme(mode);
+  });
 }
 
 
@@ -69,3 +68,4 @@ function setTheme(mode){
   ctx.clip();
   ctx.drawImage(img, 2, 0, 60, 65);
   ctx.restore();
+}
