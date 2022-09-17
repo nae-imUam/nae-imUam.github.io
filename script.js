@@ -63,9 +63,9 @@ function setTheme(mode){
   ctx.fillStyle = bgc;
   ctx.fill();
 
-  ctx.save()
-  ctx.beginPath()
-  ctx.arc(30, 30, 26, 0, 2*Math.PI, false)
-  ctx.clip()
-  ctx.drawImage(img, 2, 0, 60, 65)
-  ctx.restore()
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(30, 30, 26, 0, 2*Math.PI, false);
+  ctx.clip();
+  ctx.drawImage(img, 2, 0, 60, 65);
+  ctx.restore();
