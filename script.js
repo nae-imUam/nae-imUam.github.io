@@ -1,5 +1,3 @@
-console.log('its working');
-
 let theme = localStorage.getItem('theme')
 
 if(theme == null){
@@ -53,7 +51,7 @@ function setTheme(mode){
   grd.addColorStop(.5,"rgb(255, 51, 52)");
   grd.addColorStop(1,"rgb(255, 204, 51)");
 
-  var img = document.getElementById("img");
+  var img = document.getElementById("profile_pic");
   // Fill with gradient
   ctx.fillStyle = grd;
 
