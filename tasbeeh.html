@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Tasbeeh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+    <section class="s1">
+      <div class="main-container">
+        <h1 style="color:#4f5fd6">Tasbeeh</h1>
+        <h3>Countdown Your Zikra...   </h3>
+      </div>
+    </section>
+    <hr>
+    <section class="s2">
+      <div class="nav-wrapper">
+        <div class="dots-wrapper">
+          <div id="dot-1" class="browser-dot"></div>
+          <div id="dot-2" class="browser-dot"></div>
+          <div id="dot-3" class="browser-dot"></div>
+
+        </div>
+        <ul id="navigation">
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div>
+    </section>
+    <section>
+
+<button type="button" name="button" style="background-color:white; border:none" onclick="fun()">
+  <img id="img" src="img.jpg" style="height:73px; width: 73px; border-radius: 50%">
+  <svg  height="220" width="300">
+    <defs>
+      <linearGradient id="grad1" x1="75%" y1="25%" x2="25%" y2="75%">
+        <stop offset="0%" style="stop-color:rgb(205, 51, 255);stop-opacity:1" />
+        <stop offset="50%" style="stop-color:rgb(255, 51, 52);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:	rgb(255, 204, 51);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+
+    <circle cx="110" cy="110" r="40" stroke="url(#grad1)" stroke-width="4" fill="white" />
+    <ellipse cx="200" cy="100" rx="75" ry="75" stroke="url(#grad1)" stroke-width="7" fill="white" />
+
+
+  </svg>
+</button>
+<canvas id="circle" width="187" height="187" style="background-color:#eaeaea">
+
+</canvas>
+<script>
+  window.onload = function() {
+      var canvas = document.getElementById("circle");
+      var ctx = canvas.getContext("2d");
+      var img = document.getElementById("img");
+      var svg = document.getElementById("svg");
+
+     ctx.drawImage(img, 0, 0, 87, 87);
+     ctx.drawImage(img, 90,90,100,100)
+  };
+
+</script>
+<button type="button" name="button" style="background-color:white; border:none" onclick="fun()">
+
+<canvas id="myCanvas" width="80" height="80" style="background-color:grey">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</button>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+
+var grd = ctx.createLinearGradient(0,80,80,0);
+grd.addColorStop(0,"rgb(205, 51, 255)");
+grd.addColorStop(.5,"rgb(255, 51, 52)");
+grd.addColorStop(1,"rgb(255, 204, 51)");
+
+var img = document.getElementById("img");
+// Fill with gradient
+ctx.fillStyle = grd;
+
+ctx.beginPath();
+ctx.arc(40, 40, 40, 0, 2 * Math.PI);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(40, 40, 37, 0, 2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+ctx.save()
+ctx.beginPath()
+ctx.arc(40, 40, 35, 0, 2*Math.PI, false)
+ctx.clip()
+ctx.drawImage(img, 0, 0, 80, 80)
+ctx.restore()
+
+</script>
+
+<svg height="100" width="100">
+  <defs>
+    <linearGradient id="grad2" x1="75%" y1="25%" x2="25%" y2="75%">
+      <stop offset="0%" style="stop-color:rgb(205, 51, 255);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgb(255, 51, 52);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:	rgb(255, 204, 51);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="40" cy="40" r="40" stroke="url(#grad3)" stroke-width="4" fill="red" />
+
+
+</svg>
+
+<script type="text/javascript">
+  function fun(){
+    alert("button clicked!")
+  }
+</script>
+<svg height="230" width="200">
+  <polygon points="100, 100,  100, 120,   110, 120, 110, 110, 120, 110, 120, 120, 130, 120, 130, 100, 115, 90" style="fill:black;stroke:black;stroke-width:1" />
+  <text id="txt" x="0" y="15" fill="red">I love SVG!</text>
+</svg>
+
+<svg height="150" width="500">
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);
+      stop-opacity:0" />
+      <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+</svg>
+
+<h5>Left to Right:</h5>
+<h3>Orignal → with Round Corner → Circle Clip</h3>
+<div class="contain">
+  <div class="original">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/157293/i1.jpg" alt="">
+</div>
+
+<canvas id="round-corner"
+        class="canvas"
+        width="300"
+        height="300">
+</canvas>
+
+<canvas id="circular"
+        class="canvas"
+        width="300"
+        height="300">
+</canvas>
+</div>
+<script type="text/javascript">
+// original: https://stackoverflow.com/a/19593950
+function roundedImage(ctx, x, y, width, height, radius) {
+  ctx.beginPath();
+  ctx.moveTo(x + radius, y);
+  ctx.lineTo(x + width - radius, y);
+  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+  ctx.lineTo(x + width, y + height - radius);
+  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  ctx.lineTo(x + radius, y + height);
+  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+  ctx.lineTo(x, y + radius);
+  ctx.quadraticCurveTo(x, y, x + radius, y);
+  ctx.closePath();
+}
+
+const imageSrc = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/157293/i1.jpg';
+
+document.addEventListener("DOMContentLoaded", () => {
+  // round corner canvas' reference
+  let roundCornerCanvas = document.getElementById('round-corner');
+  let roundCornerCtx = roundCornerCanvas.getContext('2d');
+
+  // circle canvas' reference
+  let circleCanvas = document.getElementById('circular')
+  let circleCtx = circleCanvas.getContext('2d')
+
+  const imge = new Image();
+
+  imge.onload = function() {
+    // draw image with round corner
+    roundCornerCtx.save();
+    roundedImage(roundCornerCtx, 20, 20, 260, 260, 10);
+    roundCornerCtx.strokeStyle = '#2465D3'
+    roundCornerCtx.stroke()
+    roundCornerCtx.clip();
+    roundCornerCtx.drawImage(imge, 20, 20, 260, 260);
+    roundCornerCtx.restore();
+
+    // draw image with circle shape clip
+    circleCtx.save()
+    circleCtx.beginPath()
+    circleCtx.arc(150, 150, 130, 0, Math.PI * 2, false)
+    circleCtx.strokeStyle = '#2465D3'
+    circleCtx.stroke()
+    circleCtx.clip()
+    circleCtx.drawImage(imge, 0, 0, 300, 300)
+    circleCtx.restore()
+  };
+
+  imge.src = imageSrc;
+});
+
+</script>
+
+
+    </section>
+
+
+    <div class="">
+
+    </div>
+    <a href="allahu.html">allahu</a>
+  </body>
+</html>
