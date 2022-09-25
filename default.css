@@ -162,6 +162,8 @@ h6{font-size: 16px;}
 
 .left-column {
   background-image: var(--imgurl);
+  background-position: center;
+  background-size: cover;
   grid-area: left-column;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -230,6 +232,8 @@ h6{font-size: 16px;}
 
 .right-column {
   background-image: var(--imgurl);
+  background-position: center;
+  background-size: cover;
   grid-area: right-column;
   display: grid;
   align-content: center;
