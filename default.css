@@ -1,6 +1,7 @@
 :root{
   --mainColor:#eaeaea;
   --secondaryColor: #fff;
+  --secondarytrans: #ffffff00;
 
   --borderColor: #c1c1c1;
 
@@ -9,10 +10,14 @@
 
   --themeDotBorder: #24292e;
 
-  --previewBg: rgb(251, 249, 243, 0.8);
+  --previewBg: rgb(251, 249, 243, 0.7);
   --previewShadow: #f0ead6;
+  --prevShadTrans: #f0ead66f;
+
 
   --buttonColor:black;
+
+  --imgurl: url("images/gim1.gif");
 
 }
 
@@ -104,7 +109,7 @@ h6{font-size: 16px;}
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--mainColor);
+  background-color: var(--secondaryColor);
 
 }
 
@@ -155,22 +160,23 @@ h6{font-size: 16px;}
 }
 
 
-
-
 .left-column {
+  background-image: var(--imgurl);
   grid-area: left-column;
   padding-top: 50px;
   padding-bottom: 50px;
 
 }
 
+
 #profile_pic{
+  background-color: var(--secondarytrans);
   display: block;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  height: 210px;
+  width: 210px;
   object-fit: cover;
-  border: 2px solid var(--borderColor);
+  border: 0px solid var(--borderColor);
 
 }
 
@@ -223,7 +229,7 @@ h6{font-size: 16px;}
 
 
 .right-column {
-
+  background-image: var(--imgurl);
   grid-area: right-column;
   display: grid;
   align-content: center;
@@ -234,7 +240,7 @@ h6{font-size: 16px;}
 }
 
 #preview-shadow{
-  background-color: var(--previewShadow);
+  background-color: var(--prevShadTrans);
   width: 300px;
   height: 180px;
   padding-left: 30px;
@@ -247,7 +253,6 @@ h6{font-size: 16px;}
   background-color: var(--previewBg);
   padding: 15px;
   position: relative;
-
 }
 
 .corner{

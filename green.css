@@ -1,6 +1,7 @@
 :root{
   --mainColor:#606b56;
   --secondaryColor: #515a48;
+  --secondarytrans: #515a4800;
 
   --borderColor: #161914;
 
@@ -9,9 +10,11 @@
 
   --themeDotBorder: #fff;
 
-  --previewBg: rgb(81, 90, 72, 0.8);
+  --previewBg: rgb(81, 90, 72, 0.7);
   --previewShadow: #2a2f25;
+  --prevShadTrans: #2a2f252f;
 
   --buttonColor:#669966;
 
+  --imgurl: url("images/gim3.gif")
 }
