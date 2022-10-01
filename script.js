@@ -88,6 +88,8 @@ function setTheme(mode){
     bgc = '#192734';
   }
 
+
+
   if(mode == 'green'){
     document.getElementById('theme-style').href = 'green.css';
     bgc = '#515a48'
