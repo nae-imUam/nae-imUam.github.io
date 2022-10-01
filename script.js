@@ -103,5 +103,5 @@ function setTheme(mode){
 }
 
 function fun(){
-  alert("I CAN DESIGN YOUR SITE UPTO NEXT LEVEL.")
+  alert("I CAN DESIGN YOUR SITE UPTO NEXT LEVEL. SO You must have to CONTACT ME to join YOUR GREAT TEAM.")
 }
