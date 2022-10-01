@@ -164,7 +164,13 @@ h6{font-size: 16px;}
 
 
 .left-column {
+<<<<<<< HEAD
   background-image: var(--imgurl1);
+=======
+  background-image: var(--imgurl);
+  background-position: center;
+  background-size: cover;
+>>>>>>> 65992f97f9ab8337cb3b4e993367cad69eefca60
   grid-area: left-column;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -232,7 +238,13 @@ h6{font-size: 16px;}
 
 
 .right-column {
+<<<<<<< HEAD
   background-image: var(--imgurl1);
+=======
+  background-image: var(--imgurl);
+  background-position: center;
+  background-size: cover;
+>>>>>>> 65992f97f9ab8337cb3b4e993367cad69eefca60
   grid-area: right-column;
   display: grid;
   align-content: center;
