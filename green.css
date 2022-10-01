@@ -16,5 +16,9 @@
 
   --buttonColor:#669966;
 
-  --imgurl: url("images/gim3.gif")
+  --imgurl1: url("images/gim3.gif");
+  --imgurl2: url("images/gim4.gif");
+  --imgurl3: url("images/gim1.gif");
+  --imgurl4: url("images/gim2.gif");
+
 }

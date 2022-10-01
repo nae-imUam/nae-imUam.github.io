@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="default.css">
 
     <link id="theme-style" rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
   </head>
@@ -20,7 +23,7 @@
       <div class="main-container">
         <div class="greeting-wrapper">
           <h1>Hi, I'm Nae ImUam
-            <canvas id="myCanvas0" width="60" height="60">
+            <canvas id="myCanvas0" width="60" height="60" onclick="fun()">
             Your browser does not support the HTML5 canvas tag.</canvas></h1>
         </div>
 
@@ -38,7 +41,11 @@
 
           </div>
           <div class="left-column">
-            <img id="profile_pic" src="images/me.jpg">
+            <img id="img" src="images/me.jpg" hidden>
+            <button id="profile_pic" onclick="fun()" class="mb-3">
+              <canvas id="myCanvas" width="210" height="210">
+              Your browser does not support the HTML5 canvas tag.</canvas>
+            </button>
             <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
             <div id="theme-options-wrapper">
@@ -70,48 +77,52 @@
     <section class="s2">
       <div class="main-container">
         <div class="about-wrapper">
-          <div class="about-me">
+          <div class="about-me text-dark">
             <h4>More about me</h4>
 
-            <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+            <p>I build new projects just to tickle my brain and love Learnig others how they're made. I am a computer science student in Delhi University.</p>
 
-            <p>while I keep busy learning different courses, I still take interviews in search of a great team & projects that interest me.</p>
+            <p>while I keep busy learning different courses, I still give interviews in search of a great team & projects that interest me.</p>
+            <p>I love art and designig. And I Steal Like An Artist.</a>
 
             <hr>
 
             <h4>TOP EXPERTISE</h4>
 
-            <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+            <p>Frontend developer with primary focus on bootstrap + JavaScript&JQuery. <!--a target="_blank" href="resume.pdf">Download Resume</a></p-->
 
             <div id="skills">
               <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Postgres</li>
+                <li class="text-dark">Python(Intermediate)</li>
+                <li class="text-dark">C++(Intermediate)</li>
+                <li class="text-dark">Django(Intermediate)</li>
+                <li class="text-dark">JavaScript(Intermediate)</li>
+                <li class="text-dark">JQuery(Beginner)</li>
+                <li class="text-dark">React(Beginner)</li>
+                <li class="text-dark">Postgres(Beginner)</li>
               </ul>
 
               <ul>
-                <li>Google Maps API</li>
-                <li>JS Charts</li>
-                <li>AWS (RDS/S3)</li>
-                <li>Heroku</li>
-                <li>HTML/CSS</li>
+                <li class="text-dark">JAVA(Intermediate)</li>
+                <li class="text-dark">Design Algorithm(Intermediate)</li>
+                <li class="text-dark">Desigh Thinking(Intermediate)</li>
+                <li class="text-dark">Heroku(Beginner)</li>
+                <li class="text-dark">Canvas and SVG</li>
+                <li class="text-dark">HTML/CSS</li>
               </ul>
-
-
             </div>
+            <p class="m-1">And I am a Quickk Learner. I enjoy learning more than earning. and I am very honest with my work.</p>
 
 
           </div>
 
           <div class="social-links">
-            <img id="social_img" src="images/me3.jpg">
+            <video autoplay muted loop width="100%">
+              <source src="images/gvid.mp4" type="video/mp4">
+            </video>
             <h3>Find me on Twitter & LinkedIn</h3>
-            <a target="_blank" href="#">LinkedIn: @nae_imUam</a>
-            <br>
-            <a target="_blank" href="#">Twitter: @nae_imUam</a>
+            <p>LinkedIN Id:<a class="link-primary text-light bg-dark mb-0 "href="https://www.linkedin.com/in/md-ghulam-hussain-a02657246/">MD GHULAM HUSSAIN</a></p>            <br>
+            <p>Twitter Id:<a class="link-primary text-light bg-dark mt-1"href="https://twitter.com/NImuam">@NImuam</a> </p>
 
           </div>
         </div>
@@ -122,16 +133,7 @@
       <div class="main-container">
         <h3 style="text-align: center;">Some of my past Projects</h3>
 
-        <div class="post-wrapper">
-
-          <div class="post">
-            <img class="thumbnail" src="images/naEcom.png" >
-            <div class="post-preview">
-              <h6 class="post-title">naEcom: Ecom-site</h6>
-              <p class="post-intro">This is an ecommmerce site developed by me, learned from youtube. The site has been developed using <b>django</b> and it has been deployed on <a href=https://heroku.com>Heroku.com</a>.</p>
-              <a href="https://naecom.herokuapp.com/">Go to <b>naEcom</b></a>
-            </div>
-          </div>
+        <div class="post-wrapper" style="padding:20px">
 
           <div class="post">
             <img class="thumbnail" src="images/countdown.png" >
@@ -157,6 +159,33 @@
               <h6 class="post-title">SVG image</h6>
               <p class="post-intro">This html page create a bed image using svg. and desige the page usign basic bootstrap. </p>
               <a href="svg.html">See SVG image.</a>
+            </div>
+          </div>
+
+          <div class="post">
+            <img class="thumbnail" src="images/erazikr.png" >
+            <div class="post-preview">
+              <h6 class="post-title">www.erazikra.com</h6>
+              <p class="post-intro">This responsive website has been all designed by me using<b> bootstrap + JQuery + django</b> and Launched using free dynos of <b><a href="https://heroku.com">heroku.com.</a></b></p>
+              <a href="http://erazikr.com">See <b>eraZikr.com</b></a>
+            </div>
+          </div>
+
+          <div class="post">
+            <img class="thumbnail" src="images/naEcom.png" >
+            <div class="post-preview">
+              <h6 class="post-title">naEcom: Ecom-site</h6>
+              <p class="post-intro">This is an ecommmerce site developed by me, learned from youtube. The site has been developed using <b>django</b> and it has been deployed on <a href=https://heroku.com>Heroku.com</a>.</p>
+              <a href="https://naecom.herokuapp.com/">Go to <b>naEcom</b></a>
+            </div>
+          </div>
+
+          <div class="post">
+            <img class="thumbnail" src="images/nae-imuam.png" >
+            <div class="post-preview">
+              <h6 class="post-title">nae-imuam.github.io: My Portfolio site.</h6>
+              <p class="post-intro">This is an portfolio site developed by me, learned from youtube. The site has been developed using <b>django</b> and it has been deployed on <a href=https://github.com>github.com</a>.</p>
+              <a href="#">Go to <b>nae-imuam.github.io/b></a>
             </div>
           </div>
         </div>

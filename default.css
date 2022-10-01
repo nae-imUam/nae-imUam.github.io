@@ -17,7 +17,10 @@
 
   --buttonColor:black;
 
-  --imgurl: url("images/gim1.gif");
+  --imgurl1: url("images/gim1.gif");
+  --imgurl2: url("images/gim2.gif");
+  --imgurl3: url("images/gim3.gif");
+  --imgurl4: url("images/gim4.gif");
 
 }
 
@@ -161,7 +164,7 @@ h6{font-size: 16px;}
 
 
 .left-column {
-  background-image: var(--imgurl);
+  background-image: var(--imgurl1);
   grid-area: left-column;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -229,7 +232,7 @@ h6{font-size: 16px;}
 
 
 .right-column {
-  background-image: var(--imgurl);
+  background-image: var(--imgurl1);
   grid-area: right-column;
   display: grid;
   align-content: center;
@@ -290,9 +293,11 @@ h6{font-size: 16px;}
 }
 
 #skills{
+  background-image: var(--imgurl2);
+  background-size: contain;
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--previewShadow);
+  background-color: var(--prevewShadow);
 
 }
 
@@ -305,19 +310,22 @@ h6{font-size: 16px;}
 
 #social_img{
   width: 100%;
-
   border: 1px solid #eaeaff
 }
 
 .post-wrapper {
+  background-image: var(--imgurl4);
   display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
   gap: 20px;
   justify-content: center;
   padding-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, 320px);
+
 }
 
 .post{
+  max-width:320px;
+  float: left;
   border: 1px solid var(--borderColor);
 
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -349,6 +357,7 @@ h6{font-size: 16px;}
 }
 
 #contact-form{
+  background-image: var(--imgurl3);
   display: block;
   max-width: 600px;
   margin: 0 auto;
