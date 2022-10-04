@@ -1,0 +1,568 @@
+.s1{
+  background-color: var(--mainColor);
+  border-bottom: var(--borderColor);
+  overflow: auto;
+}
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #47dede;
+  height: 70px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  height: 100%;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a img{
+  margin: 3px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #34cece;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+.topnav a.right{
+  float: right;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 8px;
+  border: none;
+  margin-top: 15px;
+  margin-right: 16px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text], .topnav a.right {
+    display: block;
+    padding-left: 5px;
+  }
+  .topnav a {
+    padding: 18px 2px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/*ScrollMenu*/
+div.secondmenu {
+  background-color: #0e4040;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+div.secondmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.secondmenu a:hover {
+  background-color: #377a7a;
+}
+.icon{
+  padding-top: 10px;
+}
+
+.baricon {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 4px 0;
+  align-content: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #6eb0b0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav .profile{
+  height: 150px;
+  background-color:#25c0c0;
+  text-align: left;
+  padding: 8px 8px 0px 32px;
+  color: #e7ffff;
+}
+.profile h3 {
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 0px;
+
+}
+.profile p{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* second section */
+.nextnav {
+  float: left;
+  width: 100%;
+  overflow:;
+  height: auto;
+  background-color: #eaeaea;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.next-sec {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  column-gap: 20px;
+  background-color: #afdfdf;
+  padding: 20px;
+  height: auto;
+}
+
+.next-card{
+  border: 20px solid #ddfefe;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-width: 300px;
+  height: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-shadow: 2px 2px 40px -15px rgba(17,120,120,1);
+  -moz-box-shadow: 2px 2px 40px -15px rgba(17,120,120,1);
+  box-shadow: 2px 2px 40px -15px rgba(17,120,120,1);
+
+}
+.next-card-title{
+  background-color: #afdfdf;
+  text-align: center;
+  padding-top: 10px;
+  height: 40px;
+  align-items: center;
+
+}
+.next-card-title p {f
+  text-align: center;
+  margin: 0;
+}
+
+
+.next-card-item {
+  background-color: #ddfefe;
+  display: grid;
+  gap: 5px;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  grid-template-columns: repeat(auto-fit, 120px);
+}
+
+
+.card-item {
+    max-width:30%;
+    white-space: normal;
+    min-width: 120px;
+    max-height: 140px;
+    border: none;
+    border-radius: 20px;
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+.card-item p{
+  text-align: center;
+  font-size: 12px;
+}
+.card-item img{
+ border: none;
+ width: 100%;
+ height: 75px;
+ border-radius: 10px;
+ background-color:white;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .next-sec {  grid-template-columns: repeat(auto-fit, 280px); justify-content: space-around;}
+
+}
+@media only screen and (max-width: 660px) {
+  .next-sec {  grid-template-columns: repeat(auto-fit, 80%); justify-content: space-around; min-width: 400px;}
+
+}
+
+
+
+
+/* slideshow Design */
+
+* {box-sizing: border-box}
+body {
+  background-color: #f0fbfb;
+  font-family: Verdana, sans-serif;
+  margin:0
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 20px;
+  width: 98%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 12px;
+  margin-top: -22px;
+  color: #152d31;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* service bar */
+/* Style the tab */
+.tab {
+  border: 1px solid #ccc;
+  background-color: #92f2f2;
+  width: 100%;
+  height: auto;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  float: left;
+  display: block;
+  background-color: inherit;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  color: #035151;
+  padding: 18px 16px;
+  width: 33%;
+  height: 60px;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddfefe;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ddfefe;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-left: none;
+  height: auto;
+  display: none;
+}
+
+
+/* CArd design */
+.post-wrapper {
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.post{
+  margin-right: 20px;
+  background-color: white;
+  display: inline-block;
+
+  max-width:30%;
+  white-space: normal;
+  min-width: 400px;
+  padding: 10px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 980px) {
+  .tab button {  font-size: 14px;}
+}
+@media only screen and (max-width: 800px) {
+  .post-wrapper {  grid-template-columns: repeat(auto-fit, 360px);}
+
+}
+@media only screen and (max-width: 700px) {
+  .post-wrapper {  grid-template-columns: repeat(auto-fit, 240px);}
+  .tab button {  font-size: 12px;}
+}
+@media only screen and (max-width: 550px) {
+  .post-wrapper {  grid-template-columns: repeat(auto-fit, 400px);}
+
+}
+
+
+.thumbnail{
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-preview{
+  background-color: #fff;
+  padding: 15px;
+}
+
+.post-title{
+  text-align: center;
+  color:black;
+  margin: 0;
+}
+.post-title h3{
+  color: #008c8c;
+  text-shadow: 1px 1px 4px #009999;
+  font-weight:700;
+  margin-bottom: 0px;
+}
+ .post-title hr{
+   margin-top: 0px;
+
+ }
+.post-title img{
+  width:100%;
+  padding: 10px;
+  background-color: #92f2f2;
+}
+.post-intro{
+  color: #4b5156;
+  font-size: 16px;
+}
+
+.badge{
+  position: absolute;
+  right:0px;
+  top:50px;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  background-color: #00ffff;
+  -webkit-box-shadow: 1px 1px 42px -15px rgba(68,173,173,1);
+  -moz-box-shadow: 1px 1px 42px -15px rgba(68,173,173,1);
+  box-shadow: 1px 1px 42px -15px rgba(68,173,173,1);
+}
+
+.banner{
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  background-color: #45c7c7;
+  color:#cbffff;
+  text-align: center;
+  padding-top: 8PX;
+}
+.banner h1{
+  font-size: 44PX;
+  font-weight: bold;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.service-type{
+  text-align: center;
+  color: #004f4f;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.service-type h1 {
+  font-size: 34PX;
+  font-weight: bold;
+
+}
+
+.horizontal-scroll{
+  padding:20px;
+  background-color: #d9fcfc;
+  margin: 20px;
+  height: auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+.horizontal-scroll .pbtn{
+  display: inline-block;
+  background-color: #caffff;
+  width: 200px;
+  height: 280px;
+  padding: 10px;
+  margin-right: 25px;
+  border: 0px;
+  border-radius: 10px;
+  height20px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 21px -6px rgba(0,0,0,0.62);
+  -moz-box-shadow: 2px 2px 21px -6px rgba(0,0,0,0.62);
+  box-shadow: 2px 2px 21px -6px rgba(0,0,0,0.62);
+  align-content: center;
+}
+
+
+
+
+.service-type{
+  width: 100%;
+  color: #072222;
+  text-align: center;
+}
+.service-type h1{
+  text-align: center;
+}
+
+.pbtn img {
+  width: 180px;
+  height: 200px;
+}
+.pimg{
+  height: 200px;
+}
+.pinfo{
+  height:80px;
+  font-size: 18px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.horizontal-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.lwrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 20px;
+
+
+}
+
+.lpost{
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  min-width: 300px;
+
+}
+
+.lpost .post-title h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px
+}
