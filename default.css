@@ -101,8 +101,6 @@ h6{font-size: 16px;}
   grid-template-areas:
       'nav-wrapper nav-wrapper'
       'left-column right-column'
-
-
 }
 
 .nav-wrapper {
@@ -113,7 +111,6 @@ h6{font-size: 16px;}
   align-items: center;
   justify-content: space-between;
   background-color: var(--secondaryColor);
-
 }
 
 
@@ -164,7 +161,7 @@ h6{font-size: 16px;}
 
 
 .left-column {
-  background-image: var(--imgurl);
+  background-image: var(--imgurl1);
   background-position: center;
   background-size: cover;
   grid-area: left-column;
@@ -182,7 +179,6 @@ h6{font-size: 16px;}
   width: 210px;
   object-fit: cover;
   border: 0px solid var(--borderColor);
-
 }
 
 #theme-options-wrapper{
@@ -234,7 +230,7 @@ h6{font-size: 16px;}
 
 
 .right-column {
-  background-image: var(--imgurl);
+  background-image: var(--imgurl1);
   background-position: center;
   background-size: cover;
   grid-area: right-column;
