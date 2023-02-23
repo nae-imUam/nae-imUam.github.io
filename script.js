@@ -59,6 +59,7 @@ ctx.drawImage(img, 2, 0, 60, 65);
 ctx.restore();
 
 
+window.location.reload();
 let theme = localStorage.getItem('theme');
 
 if(theme == null){
@@ -76,7 +77,6 @@ for (var i = 0; themeDots.length > i; i++){
   });
 }
 
-window.location.reload();
 
 function setTheme(mode){
   if(mode == 'light'){
