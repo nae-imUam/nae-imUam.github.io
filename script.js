@@ -76,6 +76,7 @@ for (var i = 0; themeDots.length > i; i++){
   });
 }
 
+window.location.reload();
 
 function setTheme(mode){
   if(mode == 'light'){
