@@ -1,6 +1,7 @@
 
 let slideIndex = 1;
 showSlides(slideIndex);
+window.location.reload();
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
